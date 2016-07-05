@@ -1,6 +1,9 @@
 .h5p-no-frame > .h5p-accordion {
   border: 1px solid #eee;
 }
+.dir-rtl.h5p-accordion{
+  text-align: right;
+}
 .h5p-accordion .h5p-panel-title {
   margin: 0;
   padding: 0.8em 1px 0.8em 2em;
@@ -13,6 +16,9 @@
   transition: color 200ms ease 0s;
   border-top: 1px solid #eeeeee;
   cursor: pointer;
+}
+.dir-rtl.h5p-accordion .h5p-panel-title{
+  padding: 0.8em 2em  0.8em 1px;
 }
 .h5p-accordion .h5p-panel-title:hover,
 .h5p-accordion .h5p-panel-title:focus,
@@ -30,6 +36,10 @@
   -webkit-transition: all 200ms ease 0s;
   -moz-transition: all 200ms ease 0s;
   transition: all 200ms ease 0s;
+}
+.dir-rtl .h5p-accordion .h5p-panel-title:before{
+  content: "\f104";
+  right: 0.75em;
 }
 .h5p-accordion .h5p-panel-expanded {
   color: #000000;
